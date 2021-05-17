@@ -1,3 +1,5 @@
+import matplotlib.pyplot as plt
+
 class student:
     def __init__(self, name, international_rank, national_rank, school_rank, marks):
         self.name = name
@@ -36,7 +38,8 @@ for s in list:
         left = [1, 2]
         height = [s.percentage, national_avg_percentage]
         tick_label = [s.name, "Average Participant"]
-        plt.bar(left, height, tick_label = tick_label, width = 1, color = ['blue, orange'])
+        plt.bar(left, height, tick_label = tick_label, width = 1, color = ['red', 'green'])
+        plt.show()
         i = 1        
 if (i == 0):
     print("Not found")
